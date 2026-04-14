@@ -9,7 +9,10 @@ module.exports = {
   usage: "Howgay <Mention Member>",
   run: async (client, message, args) => {
     //Start
-    message.delete();
+    try {
+      message.delete().catch(() => {});
+    } catch (e) {}
+    
     let Member =
       message.mentions.members.first() ||
       message.guild.members.cache.get(args[0]) ||

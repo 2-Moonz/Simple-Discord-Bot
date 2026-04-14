@@ -1,3 +1,3 @@
 exports.Prefix = `>`;//your prefix for bot
-exports.Token = `Token here :D`;//your token 
-exports.Color = `BLUE`;//color   of embed
+exports.Token = `Token`;//your token 
+exports.Color = `PURPLE`;//color   of embed or your favorite color, all caps because discord.js accepts only all caps color names
